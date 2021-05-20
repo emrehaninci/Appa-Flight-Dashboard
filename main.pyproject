@@ -1,0 +1,3 @@
+{
+    "files": ["qml/controls/ais.qml","qml/pages/settingsPage.qml","qml/controls/AirSpeedIndicator.qml","qml/controls/AttitudeDirectionIndicator.qml","qml/controls/TurnCoordinator.qml","qml/controls/ComboBoxBaud.qml","qml/controls/ComboBoxComPort.qml","main.py","qml/controls/AltitudeIndicator.qml","qml/controls/HorizontalSituationIndicator.qml","qml/controls/CustomComboBox.qml","qml/controls/VerticalSpeedIndicator.qml","qml/controls/ConnectButton.qml","qml/pages/homePage.qml"]
+}
