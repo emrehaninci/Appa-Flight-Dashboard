@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.0, 2021-05-20T12:10:58. -->
+<!-- Written by QtCreator 4.14.0, 2021-05-20T18:47:29. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -169,16 +169,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.E:/Qt/Appa_Dashboard_v1/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/Qt/Appa_Dashboard_v1/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.E:/Python/Appa_Dashboard/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/Python/Appa_Dashboard/main.py</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{99d678c3-1e45-485b-bbd2-c4005133deb1}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">E:\Qt\Appa_Dashboard_v1\main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">E:\Python\Appa_Dashboard\main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/Qt/Appa_Dashboard_v1</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/Python/Appa_Dashboard</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
