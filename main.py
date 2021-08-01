@@ -1,4 +1,5 @@
 # This Python file uses the following encoding: utf-8
+# IUC IEEE APPA Kullanici Arayuzu
 import sys
 import os
 
@@ -26,19 +27,19 @@ class MainWindow(QObject):
         self.timer.timeout.connect(lambda: self.getConnect())
         self.timer.start(250)
 # ----------------------------------------------------------------------------------------
-    # Getting Values For Dronekit Connection
+    # Dronekit baglantisi
     connection_string = "COM4"
     baud_rate_value = 57600
 
     isConnected = False
     isButtonClicked = False
 
-    # Change Connection Button Text and  Signal
+    # Baglanti butonu ve sinyal atamalari
     changeConnectionButtonText = Signal(str)
     changeConnectionButtonColor = Signal(str)
     isLoadingVisible = Signal(bool)
 
-    # Change Values
+    # Degerlerin guncellenmesi
     changeRollValue = Signal(int)
     changeYawValue = Signal(int)
     changePitchValue = Signal(int)
@@ -59,7 +60,7 @@ class MainWindow(QObject):
     changeLat = Signal(float)
     changeLon = Signal(float)
 
-    # Counter for Vertical Speed Calculation
+    # Dikey hiz hesabi icin bilesenler
     counter = 5
     vertical_speed_former = 0
     vertical_speed_latter = 0
@@ -81,7 +82,7 @@ class MainWindow(QObject):
 
         self.isLoadingVisible.emit(True)
 
-        # self.getConnect(); # Dronekit Commands
+        # self.getConnect(); # Dronekit
 
 
 
@@ -89,13 +90,13 @@ class MainWindow(QObject):
 
 
         if self.isButtonClicked is True:
-            # Dronekit Connection
+            # Dronekit Baglantisi
             global vehicle
             vehicle = connect(self.connection_string, wait_ready=True, baud = self.baud_rate_value)
             print("Baglanti kuruldu")
             print(vehicle.attitude)
 
-            # Change Connection Button State
+            # Butonun yazisi ve renginin baglanti kuruldugunda degismesi
             self.changeConnectionButtonText.emit("BAĞLANDI") # Button Text
             self.changeConnectionButtonColor.emit("#05c46b") # Button Color
 
@@ -107,7 +108,7 @@ class MainWindow(QObject):
 
         elif ((self.isButtonClicked is False) and (self.isConnected is True)):
 
-            # BOTTOM VALUES
+            # Alttaki degerler
             arm_stat = vehicle.armed
             print(f"arm_stat = {arm_stat}")
             self.changeArm.emit(arm_stat)
@@ -190,8 +191,6 @@ class MainWindow(QObject):
             self.changeAltitudeValue.emit(altitude)
             print(f"\naltitude [giden] = {altitude}")
 
-
-
             # VERTICAL SPEED
             print(self.counter)
 
@@ -237,7 +236,7 @@ if __name__ == "__main__":
     main = MainWindow()
     engine.rootContext().setContextProperty("backend", main)
 
-    # Load QML File
+    # QML dosyasi yukleme
     engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))
 
     if not engine.rootObjects():

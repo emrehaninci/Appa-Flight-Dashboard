@@ -3,7 +3,7 @@ import QtQuick.Controls 2.15
 
 ComboBox {
     id: control
-    model: ["COM4", "COM14", "127.0.0.1:14550"]
+    model: ["COM4","127.0.0.1:14550"]
 
     font.family: "Arial"
     font.letterSpacing: 1
@@ -119,3 +119,9 @@ ComboBox {
         }
     }
 }
+
+/*##^##
+Designer {
+    D{i:0;height:35;width:180}
+}
+##^##*/

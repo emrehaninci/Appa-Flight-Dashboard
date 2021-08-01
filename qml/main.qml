@@ -200,7 +200,7 @@ Window {
                         id: buttonConnect
                         width: 180
                         height: 35
-                        text: "BAĞLAN (CONNECT)"
+                        text: "BAĞLAN"
                         font.letterSpacing: 1.5
                         colorPressed: "#98374e"
                         colorMouseOver: "#d44d6d"
@@ -473,7 +473,7 @@ Window {
             buttonConnect.colorPressed = value
         }
 
-        // Loading Button
+        // Yukleme ikon
 
         function onIsLoadingVisible(value){
             loadingConnect.visible = value
@@ -491,6 +491,6 @@ Window {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66}
+    D{i:0;formeditorZoom:0.75}
 }
 ##^##*/

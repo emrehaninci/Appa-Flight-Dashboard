@@ -885,12 +885,12 @@ Item {
 
     }
 
-    // BACKEND CONNECTIONS
+    // ARKA YUZ BAGLANTILARI
 
     Connections{
         target: backend
 
-        // BOTTOM VALUES ---------------------------------------------------------
+        // ALT DEGERLER ---------------------------------------------------------
 
         // ARM
         function onChangeArm(value){
@@ -902,17 +902,17 @@ Item {
             }
         }
 
-        // Flight Mode
+        // Ucus modu
         function onChangeFlightMode(value){
             flight_mode_text.text = value
         }
 
-        // Number of Sats
+        // Uydu sayisi
         function onChangeSatNum(value){
             sat_text.text = value
         }
 
-        // Battery
+        // Batarya
         function onChangeBattery(value){
             battery_text.text = value
         }
@@ -922,7 +922,7 @@ Item {
             lat_text.text = value
         }
 
-        // GPS Lpn
+        // GPS Lon
         function onChangeLon(value){
             lon_text.text = value
         }
@@ -931,20 +931,20 @@ Item {
 
         // ------------------------------------------------------------------------
 
-        // YAW VALUE - Dronekit
+        // YAW - Dronekit
         function onChangeYawValue(value){
             hsi_face.rotation = value
             // yaw_value.text = value
         }
 
 
-        // PITCH VALUE - Dronekit
+        // PITCH - Dronekit
         function onChangePitchValue(value){
             // Attitude Direction Indicator
             adi_inner.anchors.verticalCenterOffset = value
         }
 
-        // ROLL VALUE - Dronekit
+        // ROLL - Dronekit
         function onChangeRollValue(value){
 
             // Turn Coordinator
@@ -974,14 +974,14 @@ Item {
 
 
 
-        // HEADING VALUE - Dronekit
+        // HEADING - Dronekit
 
         function onChangeHeadingValue(value){
             hsi_face.rotation = value
             // heading_value.text = value
         }
 
-        // ALTITUDE VALUE (ALTIMETER) - Dronekit
+        // ALTITUDE (ALTIMETTR) - Dronekit
 
         function onChangeAltitudeValue(value){
             alt_needle_mini.rotation = value
@@ -991,7 +991,7 @@ Item {
             alt_text.text = value
         }
 
-        // VERTICAL SPEED VALUE - Dronekit
+        // VERTICAL SPEED - Dronekit
 
         function onChangeVerticalSpeedValue(value){
             vsi_hand.rotation = value
@@ -1010,7 +1010,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:818;width:1218}D{i:70}D{i:77}D{i:84}
-D{i:91}D{i:98}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:818;width:1218}
 }
 ##^##*/
