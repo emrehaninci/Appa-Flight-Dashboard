@@ -8,7 +8,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 # backend icin gerekli kutuphaneler
 from PySide2.QtCore import QObject, Slot, Signal, QTimer
 
-# Pixhawk baglantisi icin gerekli kutuphaneler
+# Pixhawk baglantisi icin gerekli  kutuphaneler
 from dronekit import connect, Command, VehicleMode, LocationGlobalRelative, LocationGlobal
 import time
 import math
